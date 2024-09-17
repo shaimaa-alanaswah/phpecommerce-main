@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="cards.css" /> -->
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <section id="header">
+        <a href="#"> <img src="images/KN__1_-removebg-preview.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html"> Home</a></li>
+                <li><a class="active" href="shop.html"> Shop </a></li>
+                <li><a href="/API/breef/contact (1)/contact/about.html"> About </a></li>
+                <li><a href="/API/breef/contact (1)/contact/contact.html"> Contact Us</a></li>
+                <li ><a id="loginButtonNav">Login</a></li>
+                <li ><a id="signupButtonNav">SignUp</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping "></i> </a></li>
+
+            </ul>
+        </div>
+
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/product1.webp" width="100%" id="Mainimg" alt="product">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Shop / Product</h6>
+            <h4>The name of product</h4>
+            <h2>$40</h2>
+            <select id="sizeSelect">
+                <option>Select size</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+            </select>
+            <div class="quantity-container1">
+                
+                <input type="button" value="-" class="quantity-button1" onclick="decrementQuantity()">
+                <span id="quantity">2</span>
+                <input type="button" value="+" class="quantity-button1" onclick="incrementQuantity()">
+                <button class="normal" onclick="addToCart()">Add To Cart</button>            </div>
+            
+            <h4>product details</h4>
+            <span id="desc">discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nostrum veritatis earum
+                repudiandae laboriosam. Error, quisquam, non provident aut deleniti ex in cum repellendus asperiores
+                nulla corporis doloremque velit repudiandae?</span>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container mt-5 mb-5 " id="comments">
+        <div class="d-flex justify-content-center row">
+            <div class="d-flex flex-column col-md-8">
+                <div class="coment-bottom bg-white p-2 px-4">
+                    <div class="d-flex flex-row add-comment-section mt-4 mb-4"><input id="inputcomment" type="text" class="form-control mr-3" placeholder="Add comment"><button id="commentButton" class="btn btn-danger" type="button">Comment</button></div>
+                    <div
+                        class="commented-section mt-2" id="commentSection">
+                      
+                 </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <footer class="section-p1" id="footerone">
+        <div>
+            <img class="logo" src="./images/ecoLogo.png" alt="">
+            <h4>Contact</h4>
+            <p><Strong>Address:</Strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone</strong>+01 222 365 / (+91) 01 2345 7891</p>
+            <p><strong>Hours</strong> 10:00 - 18:00, Mon - sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">SignIn</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Orders</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./images/app.jpg" style="background-color: #fff;" alt="">
+                <img src="./images/play.jpg" style="background-color: #fff;" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./images/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2023, Tech2 etc - Ecommerce Website.</p>
+        </div>
+    </footer>
+    <script src="sproduct.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

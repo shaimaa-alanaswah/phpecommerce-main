@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="/API/breef/index.html"> <img src="./images/KN__1_-removebg-preview.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html"> Home</a></li>
+                <li><a href="shop.html"> Shop </a></li>
+                <li><a href="/API/breef/contact (1)/contact/about.html"> About </a></li>
+                <li><a href="/API/breef/contact (1)/contact/contact.html"> Contact Us</a></li>
+                <li><a href="login.html">  Login </a></li>
+                <li><a class="active" href="singup.html"> SignUp</a></li>
+    
+            </ul>
+        </div>
+       </section>
+    <div class="content-boday">
+        <div id="login-container" class="container">
+            <form>
+                <h1>Sign Up</h1>
+    
+                <div class="input-container">
+                    <input type="text" placeholder="Enter Your Name" id="name" required>
+                    <div id="namecheck"></div>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Enter your Email" id="E-mail" required>
+                    <div id="email-check"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Enter Your password" id="password" required>
+                    <div id="pass-check"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Confirm Password" id="C-password" required>
+                    <div id="con-check"></div>
+                </div>
+                <button class="signup-button" type="submit" id="login-button">Sign Up</button>
+                <p>Already have an account? <a href="login.html" class="login-link">Log In</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signj.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 54px;
+    color: #aa1e15;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+}
+
+.section-p1 {
+    padding: 50px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 39px;
+}
+
+#header {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    height: 13vh;
+    background: transparent;
+    width: 100%;
+
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #aa1e15;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #aa1e15;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.viewBtn {
+    background: #aa1e15;
+    border: 1px solid #aa1e15;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all .8s;
+}
+
+.viewBtn:hover {
+    background: white;
+    border: 2px groove #aa1e15;
+    color: #aa1e15;
+}
+
+
+
+
+#test {
+    font-family: Arial, sans-serif;
+   
+    text-align: center;
+}
+#about-head{
+    
+    background-color: #fff5f4;
+}
+#shop{
+    text-align: center;
+    height: 60vh;
+    padding-top: 7%;
+    background-color: #fff5f4;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial {
+    width: 25%;
+    
+    margin: 0 10px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    color: #555;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.testimonial h3 {
+    color: #333;
+    margin: 0;
+}
+
+/* #mobile{
+    display: none;
+    align-items:center ;
+
+ }
+ #navbar.active{
+    right: -300px;
+
+ }
+ .show{
+    display: block;
+ }
+@media (max-width:799px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        justify-content:flex-start;
+        position: fixed;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        padding: 80px 0 0 10px;
+
+
+    }
+    #navbar.active{
+        margin-top: 35px;
+        right: 0px;
+
+    
+     }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items:center ;
+        margin-right: 20px;
+    
+     }
+     #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+
+
+
+     }
+     .show{
+        display: block;
+     }
+    
+} */
+
+/* .skills{
+    background-color:lightgrey;
+} */
+
+.normal {
+    height: 7.3vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 10px 0;
+
+}
+
+footer {
+    background-color: #d9dfe5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 7px;
+    width: 150px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    columns: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+#page-header {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+.about-header {
+    background:
+linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+url(./images/back\ velvet.png);
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 100%;
+    margin-top: 50px;
+    height: 40vh;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about1 {
+    display: flex;
+    gap: 20px;
+   
+}
+
+#about1 div {
+    width: 50%;
+}
+
+#about1 div:nth-child(1) {
+    text-align: center;
+}
+
+#about1 div:nth-child(1) p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+#contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details span {
+    font-size: 12px;
+}
+
+#contact-details h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details li {
+    list-style: none;
+}
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 7px;
+  width: 150px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1160px) {
+    #contact-details .details {
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1160px) {
+    #about1  {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    #about1 div{
+        width: 90%;
+    }
+    #about1 div img{
+        margin-left: 20%; 
+    }
+}
